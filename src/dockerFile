@@ -1,6 +1,6 @@
 FROM python:3.9
 
-ADD itinerary.py .
+ADD itineraryF.py .
 
 RUN pip install requests openai sqlite3 reportlab tkinter
 
