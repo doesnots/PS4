@@ -2,6 +2,6 @@ FROM python:3.9
 
 ADD itineraryF.py .
 
-RUN pip install requests openai sqlite3 reportlab tkinter
+RUN pip install requests openai reportlab tkinter
 
-CMD ["python", "./itinerary.py"]
+CMD ["python", "./itineraryF.py"]
