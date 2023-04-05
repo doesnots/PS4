@@ -1,23 +1,16 @@
-<<<<<<< HEAD
-FROM python:3.9
-=======
-FROM python:3.10-slim
->>>>>>> fb4d3ebd33699c6435561c589062d0d2c46f06fc
+# Set the base image to the official Python image
+FROM python:3
 
-ADD itineraryF.py .
+# Set the working directory to /PS4
+WORKDIR /PS4
 
-RUN pip install requests openai reportlab tkinter
+# Copy the current directory contents into the container at /PS4
+COPY . /PS4
 
-<<<<<<< HEAD
-=======
-# Turns off buffering for easier container logging
-ENV PYTHONUNBUFFERED=1
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Install pip requirements
-COPY requirements.txt .
-RUN python -m pip install -r requirements.txt
+# Set the command to run when the container starts
+CMD ["python", "src/itineraryF.py"]
 
-ADD itineraryF.py .
 
->>>>>>> fb4d3ebd33699c6435561c589062d0d2c46f06fc
-CMD ["python", "./itineraryF.py"]
