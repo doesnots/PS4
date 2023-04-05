@@ -13,7 +13,7 @@ root.title('Travel Planner')
 root.state('zoomed')
 
 # OpenAI API credentials
-openai.api_key = "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"
+openai.api_key = "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"
 
 # sql connection
 conn = sqlite3.connect('itinerary.db')
