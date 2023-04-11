@@ -15,11 +15,18 @@
 
 ## Libraries 
 1. openai (Access API)
-   >pip install openai
+
+   ```bash
+   pip install openai
+   ```
 2. tkinter (For UI written in python, would not work in notebooks like Jupyter Lab or Google Colab)
-   >pip install tkinter
+      ```bash
+   pip install tkinter
+   ```
 3. reportlab (To Generate PDF)
-   >pip install reportlab
+      ```bash
+   pip install reportlab
+   ```
 ---
 
 ## To Generate the Itienerary
