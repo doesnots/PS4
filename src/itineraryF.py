@@ -13,7 +13,7 @@ root.title('Travel Planner')
 root.state('zoomed')
 
 # OpenAI API credentials
-openai.api_key = "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"
+openai.api_key = "OpenAI-API-KEY"
 
 # sql connection
 conn = sqlite3.connect('itinerary.db')
@@ -180,7 +180,7 @@ save_as_pdf_button = Button(canv, text="Save as PDF", font="Helvetica 12", comma
 save_as_pdf_button.place(relx=0.642, rely=0.83)
 
 # Credit Label
-credit = Label(canv, text="©️ By: OM HINGE,KAMALIKA GHORA,RISHIKA JAIN", font=("Arial", 10, "bold"), fg="Black")
+credit = Label(canv, text="©️ By: OM HINGE,KAMALIKA GHORA", font=("Times New Roman", 10, "bold"), fg="Black")
 credit.place(relx=0.75, rely=0.95)
 
 # Run the main loop
