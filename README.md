@@ -24,4 +24,4 @@
 
 ## To Generate the Itienerary
 1. Visit OpenAI Website to generate an API-Key (https://platform.openai.com/account/api-keys) 
-2. Replace the OpenAI-KEY in itineraryF.py file with the new key generated to access the text-davinci-002 model. 
+2. Replace the OpenAI-API-KEY in itineraryF.py file with the new key generated to access the text-davinci-002 model. 
